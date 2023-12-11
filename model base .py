@@ -1,0 +1,25 @@
+visited_states = []
+
+def observe_and_act(current_state):
+    current_location, current_action = current_state
+
+    if current_location in visited_states:
+        print(f"Already visited location {current_location}. Taking the previous action: {current_action}")
+        action = current_action
+    else:
+        print(f"New location: {current_location}. Taking a new action.")
+        # For simplicity, let's assume the taxi always moves forward in a new location
+        action = 'move_forward'
+
+    # Store the current location and action for future reference
+    visited_states.append(current_location)
+
+    return action
+
+if __name__ == '__main__':
+    # Simulating the taxi's behavior in different locations
+    states = [('Home', 'move_forward'), ('Office', 'pick_passenger'), ('Market', 'move_forward'), ('Home', 'move_forward'), ('School', 'drop_passenger')]
+
+    for step, state in enumerate(states, start=1):
+        action_taken = observe_and_act(state)
+        print(f"Step {step}: Action taken - {action_taken}")
