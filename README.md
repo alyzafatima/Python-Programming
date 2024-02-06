@@ -1,2 +1,1 @@
-# password-generator
-The Password Generator Program is a Python application designed to create strong and secure passwords effortlessly. This program eliminates the need for manually coming up with strong passwords by generating them for you.
+Welcome to the Python Mastery Repository, your comprehensive resource for mastering the art of Python programming! Whether you're a beginner eager to embark on your coding journey or an experienced developer looking to enhance your skills, this repository is designed to cater to all proficiency levels.
